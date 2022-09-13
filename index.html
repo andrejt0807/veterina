@@ -60,7 +60,7 @@
             <div class="carousel-item active">
                 <img src="slike/slika1.jpg" alt="">
                 <div class="carousel-caption">
-                    <h1 class="display-2">Veterinarska ambulanta</h1>
+                    <h1 class="display-2" id="naslov">Veterinarska ambulanta</h1>
                     <h3>20 godina postojanja</h3>
                     <button type="button" class="btn btn-light btn-lg">
                         Liječenje
@@ -176,50 +176,43 @@
         </div>
     </div>
     <hr class="my-4">
-
+    <h1 class="h1crud">UNESI, UREDI, OBRIŠI PACIJENTA</h1>
     <!-- Za unos podataka -->
-    <button class="fun" data-toggle="collapse" data-target="#emoji">
-        Klikni da možeš unijeti podatke o ljubimcima
-    </button>
-    <div id="emoji" class="collapse">
-        <div class="container-fluid padding">
-            <div class="row" text-center>
-                <!-- CRUD -->
 
-                <div class="container" id="crud">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-6">
-                            <form class="border border-info p-3" id="form">
-                                <h2>Unesi podatke o pacijentu</h2>
-                                <div class="form-group">
-                                    <label for="name">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                        </svg>Korisnik</label>
-                                    <textarea class="form-control" id="name" rows="3"
-                                        placeholder="Unesi podatke"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-plus" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                                    </svg>Dodaj pacijenta
-                                </button>
-                            </form>
-                        </div>
-                        <div class="col-xs-12 col-sm-8 col-6">
-                            <div class="user" id="nameTR">
+    <!-- CRUD -->
 
-                            </div>
-                        </div>
+    <div class="container" id="crud">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-6">
+                <form class="border border-info p-3" id="form">
+                    <h2>Unesi podatke o pacijentu</h2>
+                    <div class="form-group">
+                        <label for="name">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>Korisnik</label>
+                        <textarea class="form-control" id="name" rows="3" placeholder="Unesi podatke"></textarea>
                     </div>
-                </div>
+                    <button type="submit" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>Dodaj pacijenta
+                    </button>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-6">
+                <div class="user" id="nameTR">
 
+                </div>
             </div>
         </div>
+    </div>
+
+    </div>
+    </div>
     </div>
     <!-- Tim  -->
     <div class="container-fluid padding">
